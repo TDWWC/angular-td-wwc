@@ -1,0 +1,13 @@
+<h2>Card List</h2>
+
+<ul class="cards">
+  <li *ngFor="let card of cards">
+    <a routerLink="/detail/{{card.id}}">
+      <span>
+        <img src="../../assets/card_{{card.id}}.jpg">
+      </span>
+      <span>{{card.name}}</span>
+      <span>Description: {{card.description}}</span>
+    </a>
+  </li>
+</ul>

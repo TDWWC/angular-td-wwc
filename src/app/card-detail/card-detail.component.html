@@ -1,0 +1,13 @@
+<div class="card">
+  <span>
+        <img src="../../assets/card_{{card.id}}.jpg">
+  </span>
+  <span>{{card.name}}</span>
+  <span>Description: {{card.description}}</span>
+  <span>Annual Fee: {{card.annualFee | currency:'CAD'}}</span>
+  <span>Interest: {{card.interest}}%</span>
+
+  <button (click)="applyCard(card.name)">Apply Now</button>
+  <button (click)="goBack()">Back</button>
+
+</div>

@@ -1,0 +1,11 @@
+.card span {
+  color: darkgreen;
+  position: relative;
+  display: block;
+  width: 500px;
+}
+
+.card img {
+  height: 344px;
+  width: 548px;
+}

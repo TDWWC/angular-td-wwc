@@ -1,0 +1,12 @@
+.cards span {
+  color: darkgreen;
+  position: relative;
+  display: block;
+  width: 500px;
+}
+
+.cards img {
+  height: 172px;
+  width: 274px;
+}
+
