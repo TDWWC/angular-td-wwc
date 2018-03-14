@@ -1,13 +1,18 @@
-<h2>Card List</h2>
+<!--h2>Card List</h2-->
 
-<ul class="cards">
-  <li *ngFor="let card of cards">
-    <a routerLink="/detail/{{card.id}}">
-      <span>
-        <img src="../../assets/card_{{card.id}}.jpg">
-      </span>
-      <span>{{card.name}}</span>
-      <span>Description: {{card.description}}</span>
-    </a>
-  </li>
-</ul>
+
+<ul class="card-list">
+	  <li *ngFor="let card of cards">
+	    <a routerLink="/detail/{{card.id}}">
+		<div class="card-list-row">
+	      <span class="card-img-col">
+	        <img class="card-list-img" src="../../assets/card_{{card.id}}.jpg">
+	      </span>
+	      <span class="card-description-col">
+		      <p class="card-name">{{card.name}}</p>
+		      <p class="card-description">{{card.description}}</p>
+		  </span>    
+		</div>
+	    </a>
+	  </li>
+</ul>	  

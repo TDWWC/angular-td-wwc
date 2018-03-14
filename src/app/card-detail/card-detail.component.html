@@ -1,13 +1,17 @@
-<div class="card">
-  <span>
+<div class="card-detail">
+  <span class="card-detail-row">
         <img src="../../assets/card_{{card.id}}.jpg">
   </span>
-  <span>{{card.name}}</span>
-  <span>Description: {{card.description}}</span>
-  <span>Annual Fee: {{card.annualFee | currency:'CAD'}}</span>
-  <span>Interest: {{card.interest}}%</span>
+  <span class="card-detail-row">{{card.name}}</span>
+  <span class="card-detail-row">Description: {{card.description}}</span>
+  <span class="card-detail-row">
+  		<li>Annual Fee: {{card.annualFee | currency:'CAD'}}</li>
+  		<li>Interest: {{card.interest}}%</li>
+  </span>
 
-  <button (click)="applyCard(card.name)">Apply Now</button>
-  <button (click)="goBack()">Back</button>
+  <span class="card-detail-row">
+  	<button class="td-button" (click)="applyCard(card.name)">Apply Now</button>
+    <button class="td-button" (click)="goBack()">Back</button>
+  </span>  
 
 </div>
