@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class DataService {
 
-  private dataUrl = "https://raw.githubusercontent.com/ybflame/hackondata/master/cards.json";
+  private dataUrl = "https://raw.githubusercontent.com/TDWWC/angular-td-wwc/master/docs/cards.json";
 
   constructor(private http: HttpClient) {
   }
