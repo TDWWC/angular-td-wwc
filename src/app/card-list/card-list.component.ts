@@ -13,7 +13,9 @@ export class CardListComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   getCards(): void {
-    this.cards = this.dataService.getCards();
+
+    this.dataService.getCards().subscribe(cards => this.cards = cards);
+    //this.cards = this.dataService.getCards();
   }
 
   ngOnInit() {
