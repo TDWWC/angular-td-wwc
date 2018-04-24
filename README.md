@@ -1,11 +1,13 @@
 # Prerequisites 
 ### 1. Install Node.js and NPM
 Visit the downloads section of Nodejs.org and download/run the appropriate installer based on your OS. Follow through the   installation steps with default settings, which will install NPM by default. 
-To check whether you have both of these installed, go to command line or console and type:
+Verify that you are running at least node 6.9.x and npm 3.x.x by running the following commands in terminal/console:
 ```
 node -v
 npm –v
 ```
+Older versions produce errors, but newer versions are fine.
+
 ### 2. Install Angular CLI globally
 The Angular CLI (Command Line Interface) is the quickest and easiest way to get started with a brand new Angular 5 project. 
 We're going to use NPM to install the Angular CLI through the following command:
